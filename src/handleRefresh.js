@@ -1,38 +1,31 @@
 
-var redirectPages = [
-    "Insurance.html",
-    "the-Insurance.html",
-    "lawyer.html",
-    "Health.html",
-    "car-accident-lawyer.html"
-];
-
-function handlePageRefresh() {
-    // Mendapatkan jumlah refresh dari localStorage
-    var refreshCount = parseInt(localStorage.getItem('refreshCount')) || 0;
-
-    // Menambah jumlah refresh
-    refreshCount++;
-    localStorage.setItem('refreshCount', refreshCount);
-
-    // Jika jumlah refresh sudah mencapai 3
-    if (refreshCount >= 3) {
-        // Reset refresh count
-        localStorage.removeItem('refreshCount');
-
-        // Pilih URL random dari daftar redirectPages
-        var randomRedirectIndex = Math.floor(Math.random() * redirectPages.length);
-        var redirectUrl = "https://zonweb.github.io/the-best/" + redirectPages[randomRedirectIndex];
-
-        // Redirect ke URL random
-        window.location.href = redirectUrl;
-    } else {
-        // Jika belum mencapai 3 refresh, arahkan ke halaman random
-        redirectRandomPost();
-    }
-}
 
 // Panggil fungsi untuk menangani refresh setelah halaman dimuat
 window.onload = function() {
     handlePageRefresh();
 };
+
+
+        // Daftar URL untuk pengalihan
+        const redirectUrls = [
+            'car-accident-lawyer.html', // Ganti dengan URL tujuan Anda
+            'car-accident-lawyer.html',
+            'car-accident-lawyer.html',
+            'car-accident-lawyer.html',
+            'car-accident-lawyer.html'
+            // Anda bisa menambahkan lebih banyak URL di sini
+        ];
+
+        // Mendapatkan jumlah refresh dari localStorage
+        let refreshCount = localStorage.getItem('refreshCount') || 0;
+
+        // Menambah jumlah refresh
+        refreshCount++;
+        localStorage.setItem('refreshCount', refreshCount);
+
+        // Mengecek apakah refreshCount sudah mencapai 3
+        if (refreshCount >= 3) {
+            // Mengalihkan ke salah satu URL secara acak
+            const randomIndex = Math.floor(Math.random() * redirectUrls.length);
+            window.location.href = redirectUrls[randomIndex];
+        }
