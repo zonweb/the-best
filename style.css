@@ -77,5 +77,5 @@ display: inline-block;
 }
 
 #datatom{position:relative;text-align:center}
-#timer{position:absolute;top:50%;left:50%;font-size:20px;color:#fff;background-color:#0088ff;padding:10px 20px;border-radius:5px;margin-top:20px;text-align:center;display:none;font-weight:700}#actionMessage{margin-top:20px;font-size:18px;color:green;display:none}#startButton{font-size:20px;padding:10px 20px;background-color:#0088ff;color:#fff;border:none;border-radius:5px;cursor:pointer;margin-top:20px}#startButton.hidden{display:none}
+#timer{position:absolute;top:50%;left:50%;font-size:20px;color:#fff;background-color:#0088ff;padding:10px 20px;border-radius:5px;margin: 20px;text-align:center;display: inline-block;font-weight:700}#actionMessage{margin-top:20px;font-size:18px;color:green;display:none}#startButton{font-size:20px;padding:10px 20px;background-color:#0088ff;color:#fff;border:none;border-radius:5px;cursor:pointer;margin: 20px;}#startButton.hidden{display:none}
     
