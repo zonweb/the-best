@@ -2,8 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,219,211,1) 51%, rgba(0,212,255,1) 100%); ;
+    background: #e4e4e4
 }a {text-decoration: none;}
 
 .container {
