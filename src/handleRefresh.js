@@ -8,30 +8,64 @@ var redirectPages = [
 ];
 
 function handlePageRefresh() {
-    // Mendapatkan jumlah refresh dari localStorage
     var refreshCount = parseInt(localStorage.getItem('refreshCount')) || 0;
 
-    // Menambah jumlah refresh
+
     refreshCount++;
     localStorage.setItem('refreshCount', refreshCount);
-
-    // Jika jumlah refresh sudah mencapai 3
-    if (refreshCount >= 3) {
+	
+    if (refreshCount >= 1) {
         // Reset refresh count
         localStorage.removeItem('refreshCount');
 
         var randomRedirectIndex = Math.floor(Math.random() * redirectPages.length);
         var redirectUrl = "https://zonweb.github.io/the-best/" + redirectPages[randomRedirectIndex];
 
-        // Redirect ke URL random
         window.location.href = redirectUrl;
     } else {
-        // Jika belum mencapai 3 refresh, arahkan ke halaman random
         redirectRandomPost();
     }
 }
 
-// Panggil fungsi untuk menangani refresh setelah halaman dimuat
 window.onload = function() {
     handlePageRefresh();
 };
+
+
+var redirectUrl = 'https://zonweb.github.io/the-best/next1';
+
+        var startButton = document.getElementById('startButton');
+        var timerDisplay = document.getElementById('timer');
+        var actionMessage = document.getElementById('actionMessage');
+
+        function startCountdown() {
+            var countdown = 10; 
+            timerDisplay.textContent = countdown;
+            timerDisplay.style.display = 'block'; 
+
+            startButton.classList.add('hidden');
+
+            var intervalId = setInterval(function() {
+                countdown--;
+                timerDisplay.textContent = countdown;
+
+                if (countdown <= 0) {
+                    clearInterval(intervalId);
+                    timerDisplay.style.display = 'none';
+                    actionMessage.style.display = 'none';
+                    
+                    startButton.textContent = 'Go to Link';
+                    startButton.classList.remove('hidden');
+                    startButton.addEventListener('click', function() {
+                        window.location.href = redirectUrl;
+                    });
+                }
+            }, 1000); // Interval 1000 ms = 1 detik
+        }
+        startButton.addEventListener('click', function() {
+            if (startButton.textContent === 'Start Countdown') {
+                startCountdown();
+            } else {
+                window.location.href = redirectUrl;
+            }
+        });

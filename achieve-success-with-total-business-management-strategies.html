@@ -15,53 +15,14 @@
     <h1>Achieve Success with Total Business Management Strategies</h1>
 </header>
 	<div id="datatom">
-    <button id="startButton" data-link="https://example.com">Start Countdown</button>
+    <button id="startButton" data-link="https://example.com">Continue To Watch</button>
     <div id="timer">10</div>
     <div id="actionMessage">Time's up! Click the button to go to the link.</div>
 </div>
 <div id="datatom" >
     <img data-original-height="48" data-original-width="50" width="70" height="65" border="0" src="/the-best/src/images/arrow-top.png">
 </div>
-     <script>
-        var redirectUrl = 'https://zonweb.github.io/the-best/next1';
 
-        var startButton = document.getElementById('startButton');
-        var timerDisplay = document.getElementById('timer');
-        var actionMessage = document.getElementById('actionMessage');
-
-        function startCountdown() {
-            var countdown = 10; 
-            timerDisplay.textContent = countdown;
-            timerDisplay.style.display = 'block'; 
-
-            startButton.classList.add('hidden');
-
-            var intervalId = setInterval(function() {
-                countdown--;
-                timerDisplay.textContent = countdown;
-
-                if (countdown <= 0) {
-                    clearInterval(intervalId);
-                    timerDisplay.style.display = 'none';
-                    actionMessage.style.display = 'none';
-                    
-                    startButton.textContent = 'Go to Link';
-                    startButton.classList.remove('hidden');
-                    startButton.addEventListener('click', function() {
-                        window.location.href = redirectUrl;
-                    });
-                }
-            }, 1000); // Interval 1000 ms = 1 detik
-        }
-        startButton.addEventListener('click', function() {
-            if (startButton.textContent === 'Start Countdown') {
-                startCountdown();
-            } else {
-                window.location.href = redirectUrl;
-            }
-        });
-    </script>
-	
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1051513613626805"
      crossorigin="anonymous"></script>
 <!-- games 1 -->
