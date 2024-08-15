@@ -14,45 +14,34 @@
 <header>
     <h1>Achieve Success with Total Business Management Strategies</h1>
 </header>
-    <style>#datatom{position:relative;text-align:center}
-#timer{position:absolute;top:50%;left:50%;font-size:20px;color:#fff;background-color:#4CAF50;padding:10px 20px;border-radius:5px;margin-top:20px;text-align:center;display:none;font-weight:700}#actionMessage{margin-top:20px;font-size:18px;color:green;display:none}#startButton{font-size:20px;padding:10px 20px;background-color:#4CAF50;color:#fff;border:none;border-radius:5px;cursor:pointer;margin-top:20px}#startButton.hidden{display:none}
-    </style>
 	<div id="datatom">
     <button id="startButton" data-link="https://example.com">Start Countdown</button>
     <div id="timer">10</div>
-    <div id="actionMessage">Waktu habis! Klik tombol untuk pergi ke link.</div>
+    <div id="actionMessage">Time's up! Click the button to go to the link.</div>
 </div>
      <script>
-        // URL yang akan digunakan
-        var redirectUrl = 'https://example.com';
+        var redirectUrl = 'https://zonweb.github.io/the-best/next2';
 
-        // Ambil elemen dari DOM
         var startButton = document.getElementById('startButton');
         var timerDisplay = document.getElementById('timer');
         var actionMessage = document.getElementById('actionMessage');
 
-        // Fungsi untuk memulai hitungan mundur
         function startCountdown() {
-            var countdown = 10; // Durasi hitungan mundur dalam detik
+            var countdown = 10; 
             timerDisplay.textContent = countdown;
-            timerDisplay.style.display = 'block'; // Tampilkan timer
+            timerDisplay.style.display = 'block'; 
 
-            // Sembunyikan tombol
             startButton.classList.add('hidden');
 
-            // Update timer setiap detik
             var intervalId = setInterval(function() {
                 countdown--;
                 timerDisplay.textContent = countdown;
 
-                // Jika hitungan mundur selesai
                 if (countdown <= 0) {
                     clearInterval(intervalId);
-                    // Hapus timer dan pesan, tampilkan tombol dengan link
                     timerDisplay.style.display = 'none';
                     actionMessage.style.display = 'none';
                     
-                    // Mengupdate tombol dengan URL dan mengaktifkan klik
                     startButton.textContent = 'Go to Link';
                     startButton.classList.remove('hidden');
                     startButton.addEventListener('click', function() {
@@ -61,14 +50,10 @@
                 }
             }, 1000); // Interval 1000 ms = 1 detik
         }
-
-        // Tambahkan event listener untuk tombol
         startButton.addEventListener('click', function() {
-            // Jika tombol belum diubah, mulai hitungan mundur
             if (startButton.textContent === 'Start Countdown') {
                 startCountdown();
             } else {
-                // Jika tombol sudah diubah, klik untuk mengarahkan ke link
                 window.location.href = redirectUrl;
             }
         });
