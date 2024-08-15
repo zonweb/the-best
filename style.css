@@ -80,6 +80,8 @@ button:hover {
   border-left-color: transparent;
   border-radius: 4px;
   color: #fff;
+  background-color: #0088ff;
+    border-color: #007634;
 }
 
 #datatom{position:relative;text-align:center}
