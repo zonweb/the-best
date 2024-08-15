@@ -1,26 +1,37 @@
-        // Fungsi untuk membuat redirect ke halaman turunan random
-        function redirectRandomPost() {
-            // Array berisi daftar halaman yang kamu ingin buat
-            var pages = [
-                "expert-houston-maritime-attorney-navigating-your-legal-waters.html",
-                "top-houston-maritime-attorney-protecting-your-rights-at-sea.html",
-                "houston-maritime-attorney-services-your-trusted-legal-partner.html",
-                "experienced-houston-maritime-attorney-advocating-for-seafarers-rights.html",
-                "houston-maritime-attorney-comprehensive-legal-solutions-for-maritime-cases.html",
-                "your-guide-to-choosing-the-right-houston-maritime-attorney.html",
-                "houston-maritime-attorney-ensuring-justice-for-maritime-workers.html",
-                "navigating-maritime-law-insights-from-a-houston-maritime-attorney.html",
-                "houston-maritime-attorney-dedicated-to-your-maritime-legal-needs.html",
-                "protect-your-interests-with-a-leading-houston-maritime-attorney.html"
-            ];
 
-            // Generate indeks random berdasarkan panjang array pages
-            var randomIndex = Math.floor(Math.random() * pages.length);
-            // Redirect ke URL turunan yang dipilih secara acak
-            window.location.href = "https://zonweb.github.io/the-best/" + pages[randomIndex];
-        }
+var redirectPages = [
+    "Insurance.html",
+    "the-Insurance.html",
+    "lawyer.html",
+    "Health.html",
+    "car-accident-lawyer.html"
+];
 
-        // Panggil fungsi redirect setelah halaman dimuat
-        window.onload = function() {
-            redirectRandomPost();
-        };
+function handlePageRefresh() {
+    // Mendapatkan jumlah refresh dari localStorage
+    var refreshCount = parseInt(localStorage.getItem('refreshCount')) || 0;
+
+    // Menambah jumlah refresh
+    refreshCount++;
+    localStorage.setItem('refreshCount', refreshCount);
+
+    // Jika jumlah refresh sudah mencapai 3
+    if (refreshCount >= 3) {
+        // Reset refresh count
+        localStorage.removeItem('refreshCount');
+
+        var randomRedirectIndex = Math.floor(Math.random() * redirectPages.length);
+        var redirectUrl = "https://zonweb.github.io/the-best/" + redirectPages[randomRedirectIndex];
+
+        // Redirect ke URL random
+        window.location.href = redirectUrl;
+    } else {
+        // Jika belum mencapai 3 refresh, arahkan ke halaman random
+        redirectRandomPost();
+    }
+}
+
+// Panggil fungsi untuk menangani refresh setelah halaman dimuat
+window.onload = function() {
+    handlePageRefresh();
+};
