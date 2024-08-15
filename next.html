@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function redirectRandomPost() {
+            var pages = [
+                "Insurance.html",
+                "the-Insurance.html",
+                "lawyer.html",
+                "Health.html",
+                "car-accident-lawyer.html"
+                // Tambahkan lebih banyak URL di sini
+            ];
+            var randomIndex = Math.floor(Math.random() * pages.length);
+            // Redirect ke URL turunan yang dipilih secara acak
+            window.location.href = "https://zonweb.github.io/the-best/next/" + pages[randomIndex];
+        }
+        window.onload = function() {
+            redirectRandomPost();
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
