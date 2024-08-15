@@ -15,15 +15,64 @@
     <h1>Achieve Success with Total Business Management Strategies</h1>
 </header>
     <style>
-#container{position:relative;margin-top:20px}#timer{font-size:20px;color:#fff;background-color:#4CAF50;padding:10px 20px;border-radius:5px;text-align:center;display:none;width:100%;max-width:200px;font-weight:700;position:absolute;top:0;left:0}#actionMessage{margin-top:20px;font-size:18px;color:green;display:none}#startButton{font-size:20px;padding:10px 20px;background-color:#4CAF50;color:#fff;border:none;border-radius:5px;cursor:pointer;margin-top:20px;display:block}#startButton.hidden{display:none}
+#timer{font-size:20px;color:#fff;background-color:#4CAF50;padding:10px 20px;border-radius:5px;margin-top:20px;text-align:center;display:none;font-weight:700;width:150px}#actionMessage{margin-top:20px;font-size:18px;color:green;display:none}#startButton{font-size:20px;padding:10px 20px;background-color:#4CAF50;color:#fff;border:none;border-radius:5px;cursor:pointer;margin-top:20px}#startButton.hidden{display:none}
     </style>
     <button id="startButton" data-link="https://example.com">Start Countdown</button>
     <div id="timer">10</div>
     <div id="actionMessage">Waktu habis! Klik tombol untuk pergi ke link.</div>
 
-    <script>
-       function startCountdown(){var a=10;timerDisplay.textContent=a,timerDisplay.style.display="block",startButton.style.display="none";var b=setInterval(function(){a--,timerDisplay.textContent=a,a<=0&&(clearInterval(b),timerDisplay.style.display="none",actionMessage.style.display="none",startButton.textContent="Go to Link",startButton.style.display="inline-block",startButton.addEventListener("click",function(){window.location.href=redirectUrl}))},1e3)}var redirectUrl="https://example.com",startButton=document.getElementById("startButton"),timerDisplay=document.getElementById("timer"),actionMessage=document.getElementById("actionMessage");startButton.addEventListener("click",function(){"Start Countdown"===startButton.textContent?startCountdown():window.location.href=redirectUrl});
+     <script>
+        // URL yang akan digunakan
+        var redirectUrl = 'https://example.com';
+
+        // Ambil elemen dari DOM
+        var startButton = document.getElementById('startButton');
+        var timerDisplay = document.getElementById('timer');
+        var actionMessage = document.getElementById('actionMessage');
+
+        // Fungsi untuk memulai hitungan mundur
+        function startCountdown() {
+            var countdown = 10; // Durasi hitungan mundur dalam detik
+            timerDisplay.textContent = countdown;
+            timerDisplay.style.display = 'block'; // Tampilkan timer
+
+            // Sembunyikan tombol
+            startButton.classList.add('hidden');
+
+            // Update timer setiap detik
+            var intervalId = setInterval(function() {
+                countdown--;
+                timerDisplay.textContent = countdown;
+
+                // Jika hitungan mundur selesai
+                if (countdown <= 0) {
+                    clearInterval(intervalId);
+                    // Hapus timer dan pesan, tampilkan tombol dengan link
+                    timerDisplay.style.display = 'none';
+                    actionMessage.style.display = 'none';
+                    
+                    // Mengupdate tombol dengan URL dan mengaktifkan klik
+                    startButton.textContent = 'Go to Link';
+                    startButton.classList.remove('hidden');
+                    startButton.addEventListener('click', function() {
+                        window.location.href = redirectUrl;
+                    });
+                }
+            }, 1000); // Interval 1000 ms = 1 detik
+        }
+
+        // Tambahkan event listener untuk tombol
+        startButton.addEventListener('click', function() {
+            // Jika tombol belum diubah, mulai hitungan mundur
+            if (startButton.textContent === 'Start Countdown') {
+                startCountdown();
+            } else {
+                // Jika tombol sudah diubah, klik untuk mengarahkan ke link
+                window.location.href = redirectUrl;
+            }
+        });
     </script>
+	
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1051513613626805"
      crossorigin="anonymous"></script>
 <!-- games 1 -->
