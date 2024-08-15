@@ -2,23 +2,27 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,219,211,1) 51%, rgba(0,212,255,1) 100%); ;
+    background: #e4e4e4;font-weight: 400;
+    font-style: normal;
+    line-height: 1.4em;
+    position: relative;
 }a {text-decoration: none;}
 
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
-    background: rgb(238,223,230);
-    background: radial-gradient(circle, rgba(238,223,230,1) 0%, rgba(205,216,230,1) 100%); ;
+max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
 h1 {
-    color: #343a40;
+    color: #161618;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin: 0;
 }
 
 .form {
@@ -85,5 +89,5 @@ button:hover {
 }
 
 #datatom{position:relative;text-align:center}
-#timer{position:absolute;top:50%;left:50%;font-size:20px;color:#fff;background-color:#4CAF50;padding:10px 20px;border-radius:5px;margin-top:20px;text-align:center;display:none;font-weight:700}#actionMessage{margin-top:20px;font-size:18px;color:green;display:none}#startButton{font-size:20px;padding:10px 20px;background-color:#4CAF50;color:#fff;border:none;border-radius:5px;cursor:pointer;margin-top:20px}#startButton.hidden{display:none}
+#timer{position:absolute;top:50%;left:50%;font-size:20px;color:#fff;background-color:#0088ff;padding:10px 20px;border-radius:5px;margin-top:20px;text-align:center;display:none;font-weight:700}#actionMessage{margin-top:20px;font-size:18px;color:green;display:none}#startButton{font-size:20px;padding:10px 20px;background-color:#0088ff;color:#fff;border:none;border-radius:5px;cursor:pointer;margin-top:20px}#startButton.hidden{display:none}
     
