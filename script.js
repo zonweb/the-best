@@ -3,7 +3,7 @@
             // Array berisi daftar halaman yang kamu ingin buat
             var pages = [
                 "expert-houston-maritime-attorney-navigating-your-legal-waters.html",
-                "terms.html"
+                "top-houston-maritime-attorney-protecting-your-rights-at-sea.html"
                 // Tambahkan lebih banyak URL di sini
             ];
 
