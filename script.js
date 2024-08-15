@@ -2,7 +2,7 @@
         function redirectRandomPost() {
             // Array berisi daftar halaman yang kamu ingin buat
             var pages = [
-                "privacy.html",
+                "expert-houston-maritime-attorney-navigating-your-legal-waters.html",
                 "terms.html"
                 // Tambahkan lebih banyak URL di sini
             ];
