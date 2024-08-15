@@ -56,38 +56,26 @@ button:hover {
 }
 
 .btn.btn-danger {
-  display: inline-block;
-  padding: 6px 12px;
-  margin: 20px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #0088ff;
+display: inline-block;
+    padding: 6px 12px;
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #0088ff;
     border-color: #007634;
 }
 
 #datatom{position:relative;text-align:center}
-#timer{position:absolute;top:50%;left:50%;font-size:20px;color:#fff;background-color:#0088ff;padding:10px 20px;border-radius:5px;margin-top:20px;text-align:center;display:none;font-weight:700}#actionMessage{margin-top:20px;font-size:18px;color:green;display:none}#startButton{font-size:20px;padding:10px 20px;background-color:#0088ff;color:#fff;border:none;border-radius:5px;cursor:pointer;margin-top:20px}#startButton.hidden{display:none}
+#timer{font-size:20px;color:#fff;background-color:#0088ff;padding:10px 20px;border-radius:5px;margin: 20px;text-align:center;display: none;font-weight:700}#actionMessage{margin-top:20px;font-size:18px;color:green;display:none}#startButton{font-size:20px;padding:10px 20px;background-color:#0088ff;color:#fff;border:none;border-radius:5px;cursor:pointer;margin: 20px;}#startButton.hidden{display:none}
     
