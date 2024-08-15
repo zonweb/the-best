@@ -3,10 +3,7 @@
             // Array berisi daftar halaman yang kamu ingin buat
             var pages = [
                 "privacy.html",
-                "terms.html",
-                "lawyer.html",
-                "Health.html",
-                "car-accident-lawyer.html"
+                "terms.html"
                 // Tambahkan lebih banyak URL di sini
             ];
 
