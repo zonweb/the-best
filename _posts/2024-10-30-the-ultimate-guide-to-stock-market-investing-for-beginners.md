@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cryptocurrency Explained: How to Start Investing Safely
+title: Cryptocurrency Explained How to Start Investing Safely
 description: A comprehensive guide to understanding cryptocurrency and tips for safe investing.
 summary: This article covers the basics of cryptocurrency, how it works, and essential tips for safe investing.
 tags: cryptocurrency investing finance beginners
