@@ -9,8 +9,6 @@ minute: 4
 
 {% include ads1.html %}
 
-## Introduction
-
 Critical illness insurance is a specialized policy designed to provide financial support in the event of a severe medical diagnosis. This type of insurance can be crucial for protecting your financial well-being when faced with life-threatening illnesses. In this article, we will explore the benefits of critical illness insurance and why it might be a necessary addition to your financial plan.
 
 {% include ads2.html %}
