@@ -9,8 +9,6 @@ minute: 5
 
 {% include ads1.html %}
 
-## Introduction
-
 Maintaining a heart-healthy diet is crucial for preventing cardiovascular diseases and promoting overall well-being. By incorporating specific foods into your meals, you can improve your heart health and reduce the risk of heart-related issues. This article explores essential foods to include in your diet today for a healthier heart.
 
 {% include ads2.html %}
