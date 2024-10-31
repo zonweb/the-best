@@ -3,7 +3,7 @@ layout: post
 title: The Ultimate Guide to Stock Market Investing for Beginners
 description: A comprehensive guide to help beginners navigate the stock market and make informed investment decisions.
 summary: This guide covers essential strategies, tips, and resources for novice investors looking to enter the stock market successfully.
-tags: [investing, stock market, finance, beginners]
+tags: investing stock market finance beginners
 ---
 
 {% include ads1.html %}
