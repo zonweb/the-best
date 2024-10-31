@@ -7,7 +7,7 @@ tags: investing stock-market finance
 minute: 5
 ---
 
-
+{% include ads1.html %}
 
 ## Introduction to Stock Market Investing
 
