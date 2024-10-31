@@ -23,7 +23,7 @@ The stock market operates as a marketplace where investors buy and sell shares o
 - **Dividends**: Portions of a company’s profits distributed to shareholders.
 - **Bulls and Bears**: A “bull market” indicates rising prices, while a “bear market” signifies a decline.
 
-
+{% include ads3.html %}
 
 ## Why Should You Invest in the Stock Market?
 
@@ -33,7 +33,7 @@ Investing in stocks offers several advantages. Primarily, it allows your money t
 - **Dividends and Income**: Some stocks pay dividends, providing passive income.
 - **Inflation Hedge**: Stock returns tend to outpace inflation, protecting purchasing power.
 
-
+{% include ads4.html %}
 
 ## Steps to Start Investing in the Stock Market
 
@@ -42,7 +42,7 @@ Investing in stocks offers several advantages. Primarily, it allows your money t
 3. **Choose a Brokerage Account**: Select a reliable online brokerage with low fees and beginner-friendly tools.
 4. **Diversify Your Portfolio**: Spread your investments across various sectors to manage risk.
 
-
+{% include ads5.html %}
 
 ## Key Tips for Beginners
 
@@ -55,4 +55,4 @@ Investing in stocks offers several advantages. Primarily, it allows your money t
 
 Investing in the stock market can be a powerful way to build wealth, but it requires patience and knowledge. By understanding the basics, setting clear goals, and following best practices, beginners can start their investment journey with confidence. Remember, the stock market is best approached as a long-term endeavor. 
 
-
+{% include ads1.html %}
