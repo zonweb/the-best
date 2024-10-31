@@ -9,8 +9,6 @@ minute: 8
 
 {% include ads1.html %}
 
-## Introduction
-
 Studying abroad is a life-changing experience, but it can also be financially daunting. Scholarships can significantly reduce the financial burden and make your dream of studying overseas a reality. This guide provides valuable tips on how to find and secure scholarships for studying abroad.
 
 {% include ads2.html %}
