@@ -13,7 +13,7 @@ minute: 5
 
 The stock market can be both exciting and intimidating for beginners. With the right approach, however, investing in stocks is one of the most effective ways to build wealth over time. This guide provides a comprehensive overview for those who are new to investing and want to understand how to start their journey in the stock market.
 
-
+{% include ads2.html %}
 
 ## Understanding the Basics of the Stock Market
 
