@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Staticman comments on a Jekyll site
+title: Staticman comments on a Jekyll site 1
 description: Generating comments on static sites with Staticman
 summary: Generating comments on static sites with Staticman.
 comments: true
