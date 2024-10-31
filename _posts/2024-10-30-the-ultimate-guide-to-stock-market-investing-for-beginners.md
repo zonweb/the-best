@@ -8,8 +8,6 @@ tags: investing stock market finance beginners
 
 {% include ads1.html %}
 
-# The Ultimate Guide to Stock Market Investing for Beginners
-
 Investing in the stock market can seem daunting for beginners. However, with the right knowledge and strategies, anyone can learn to invest successfully. This guide will walk you through the basics of stock market investing, key strategies, and tips to help you get started.
 
 {% include ads2.html %}
