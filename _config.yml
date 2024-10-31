@@ -1,14 +1,8 @@
 site: Gesko
 title: Gesko
 greetings: Hello there! 👋
-description: |
-  Welcome to our website, your trusted source for up-to-date information and guidance across essential categories. In the **Finance and Investment** section, we provide in-depth insights into investment strategies, financial management, and tips to enhance your wealth.
-  
-  Meanwhile, our **Insurance** category explores various types of policies and how to choose the best coverage for your needs. We also offer valuable information in **Travel and Tourism**, featuring exciting destinations, travel tips, and accommodation recommendations to make your vacation experience even more enjoyable.
-
-  In the **Health and Wellness** category, we present articles discussing healthy lifestyles, nutrition, and fitness tips to improve your quality of life. For tech enthusiasts, our **Technology and Gadgets** section showcases the latest reviews of innovative devices and cutting-edge technology developments.
-
-  Additionally, we provide important information on **Law and Legal Consulting**, including your rights and legal advice for various situations. Finally, in the **Education** category, we offer guides and resources to help you achieve your academic and professional goals. Discover all this and more on our website!
+description: >-
+  Welcome to our website, your trusted source for essential information. Explore categories like Finance and Investment, Insurance, Travel and Tourism, Health and Wellness, Technology and Gadgets, Law and Legal Consulting, and Education, with valuable insights and resources to enhance your knowledge and experience.
 
 lang: en-US
 timezone:  America/New_York
